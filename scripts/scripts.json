@@ -1,0 +1,22 @@
+[
+  {
+    "name": "start",
+    "color": "inverse",
+    "preCommands": [
+      "yarn run stop",
+      "lerna bootstrap"
+    ],
+    "commands": [
+      {
+        "name": "@darker/app",
+        "color": "green",
+        "cmd": "yarn --cwd ./packages/app/ start"
+      },
+      {
+        "name": "@darker/game",
+        "color": "yellow",
+        "cmd": "yarn --cwd ./packages/game/ start"
+      }
+    ]
+  }
+]
